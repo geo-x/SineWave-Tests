@@ -11,6 +11,7 @@
 		5E0825141A8584DB00B85C2B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E0825131A8584DB00B85C2B /* Images.xcassets */; };
 		5E0825171A8584DB00B85C2B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E0825151A8584DB00B85C2B /* MainMenu.xib */; };
 		5E0825231A8584DB00B85C2B /* SineWaver_Test1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0825221A8584DB00B85C2B /* SineWaver_Test1Tests.swift */; };
+		5E08252D1A85B54A00B85C2B /* SineWaveClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E08252C1A85B54A00B85C2B /* SineWaveClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 		5E08251C1A8584DB00B85C2B /* SineWaver_Test1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SineWaver_Test1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E0825211A8584DB00B85C2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E0825221A8584DB00B85C2B /* SineWaver_Test1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineWaver_Test1Tests.swift; sourceTree = "<group>"; };
+		5E08252C1A85B54A00B85C2B /* SineWaveClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SineWaveClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				5E0825111A8584DB00B85C2B /* AppDelegate.swift */,
+				5E08252C1A85B54A00B85C2B /* SineWaveClass.swift */,
 				5E0825131A8584DB00B85C2B /* Images.xcassets */,
 				5E0825151A8584DB00B85C2B /* MainMenu.xib */,
 				5E08250F1A8584DB00B85C2B /* Supporting Files */,
@@ -205,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E08252D1A85B54A00B85C2B /* SineWaveClass.swift in Sources */,
 				5E0825121A8584DB00B85C2B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

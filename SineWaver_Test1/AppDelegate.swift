@@ -15,6 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
 
+    @IBOutlet weak var swSimpleView: SimpleView!
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
        
@@ -33,38 +34,48 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         
         
-        var currentContext : CGContext? {
-            get {
-                // The 10.10 SDK provdes a CGContext on NSGraphicsContext, but
-                // that's not available to folks running 10.9, so perform this
-                // violence to get a context via a void*.
-                // iOS can use UIGraphicsGetCurrentContext.
-                
-                let unsafeContextPointer = NSGraphicsContext.currentContext()?.graphicsPort
-                
-                if let contextPointer = unsafeContextPointer {
-                    let opaquePointer = COpaquePointer(contextPointer)
-                    let context: CGContextRef = Unmanaged.fromOpaque(opaquePointer).takeUnretainedValue()
-                    return context
-                } else {
-                    return nil
-                }
-            }
-            
-        }
+//        var currentContext : CGContext? {
+//            get {
+//                // The 10.10 SDK provdes a CGContext on NSGraphicsContext, but
+//                // that's not available to folks running 10.9, so perform this
+//                // violence to get a context via a void*.
+//                // iOS can use UIGraphicsGetCurrentContext.
+//                
+//                let unsafeContextPointer = NSGraphicsContext.currentContext()?.graphicsPort
+//                
+//                if let contextPointer = unsafeContextPointer {
+//                    let opaquePointer = COpaquePointer(contextPointer)
+//                    let context: CGContextRef = Unmanaged.fromOpaque(opaquePointer).takeUnretainedValue()
+//                    return context
+//                } else {
+//                    return nil
+//                }
+//            }
+//            
+//        }
+//        
+//        
+//        println("\(currentContext)")
+//        
+//         //println("\(currentContext)")
+//        
+//        CGContextSetRGBFillColor (currentContext, 1.0, 1.0, 1.0, 1.0)
+//        
+//        
+//        CGContextSetRGBFillColor(currentContext, 1, 0, 0, 1)
+//        CGContextFillRect(currentContext, CGRectMake(0, 0, 400, 100))
+//        
+//        CGContextSetRGBFillColor(currentContext, 1, 0, 0, 1)
+//        CGContextFillRect(currentContext, CGRectMake(0, 200, 400, 10))
+//   
+//        
         
         
-        println("\(currentContext)")
-        
-         //println("\(currentContext)")
-        
-        CGContextSetRGBFillColor (currentContext, 1.0, 1.0, 1.0, 1.0)
+        //CGContextFlush(currentContext)
         
         
-        CGContextSetRGBFillColor(currentContext, 1, 0, 0, 1)
-        CGContextFillRect(currentContext, CGRectMake(0, 0, 100, 100))
-        CGContextFlush(currentContext)
-        
+       
+     
     } // end of main loop
     
     

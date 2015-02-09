@@ -12,6 +12,7 @@
 		5E0825171A8584DB00B85C2B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E0825151A8584DB00B85C2B /* MainMenu.xib */; };
 		5E0825231A8584DB00B85C2B /* SineWaver_Test1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0825221A8584DB00B85C2B /* SineWaver_Test1Tests.swift */; };
 		5E08252D1A85B54A00B85C2B /* SineWaveClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E08252C1A85B54A00B85C2B /* SineWaveClass.swift */; };
+		5E8A52561A885BAA001D5164 /* theView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A52551A885BAA001D5164 /* theView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		5E0825211A8584DB00B85C2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E0825221A8584DB00B85C2B /* SineWaver_Test1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineWaver_Test1Tests.swift; sourceTree = "<group>"; };
 		5E08252C1A85B54A00B85C2B /* SineWaveClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SineWaveClass.swift; sourceTree = "<group>"; };
+		5E8A52551A885BAA001D5164 /* theView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = theView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				5E0825111A8584DB00B85C2B /* AppDelegate.swift */,
 				5E08252C1A85B54A00B85C2B /* SineWaveClass.swift */,
+				5E8A52551A885BAA001D5164 /* theView.swift */,
 				5E0825131A8584DB00B85C2B /* Images.xcassets */,
 				5E0825151A8584DB00B85C2B /* MainMenu.xib */,
 				5E08250F1A8584DB00B85C2B /* Supporting Files */,
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E08252D1A85B54A00B85C2B /* SineWaveClass.swift in Sources */,
+				5E8A52561A885BAA001D5164 /* theView.swift in Sources */,
 				5E0825121A8584DB00B85C2B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +401,7 @@
 				5E0825281A8584DB00B85C2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E0825291A8584DB00B85C2B /* Build configuration list for PBXNativeTarget "SineWaver_Test1Tests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +410,7 @@
 				5E08252B1A8584DB00B85C2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
